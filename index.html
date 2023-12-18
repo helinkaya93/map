@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&family=Poppins&family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Harita2</title>
+
+    <!-- bs icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- leaflet css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <aside>
+      <div class="wrapper">
+        <div class="main-contaier">
+          <div class="top">
+            <div class="title">
+              <h1 id="date"></h1>
+              <h2>You've got <span class="total_item"></span> to go today!</h2>
+            </div>
+            <button class="add_btn">+</button>
+          </div>
+          <div class="bottom">
+            <div id="add" class="add">
+              <div class="add_container">
+                <input
+                  type="text"
+                  class="add_description"
+                  placeholder="what would you like to go today?"
+                />
+              </div>
+            </div>
+            <div class="container clearfix">
+              <div class="togo">
+                <div class="togo">
+                  <div id="list" class="togo_list">
+                    <!-- <div class="item">
+                    <div class="item-description"></div>
+                    <div class="item-delet">
+                      <button class="item_delet_btn" >
+                        <span class="material-symbols-outlined">
+                          directions_walk
+                        </span>
+                        <span class="material-symbols-outlined">
+                          delete
+                        </span>
+                      </button>
+                    </div>
+                  </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div id="map"></div>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="app/app.js" type="module"></script>
+  </body>
+</html>
